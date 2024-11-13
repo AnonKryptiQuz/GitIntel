@@ -43,7 +43,7 @@ def get_random_user_agent():
 class GitHubEmailExtractor:
     def __init__(self, username):
         self.username = username
-        self.base_url = "https://api.github.com/"  # Replace with your specific API path or key to have a longer rate limit. If you don't want to do that, you can keep using the default one.
+        self.base_url = "https://api.github.com"  # Replace with your specific API path or key to have a longer rate limit. If you don't want to do that, you can keep using the default one.
 
         self.headers = {
             "User-Agent": get_random_user_agent()
